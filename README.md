@@ -9,7 +9,7 @@
 <p align="center">This is for your practice. And it makes you an excellent programmer. This accelerates your coding speed.<br>And the outputs are provided alongside, so you know whether you are on the right track or not.</p>
 <hr>
 
-## C-Programs Run
+<h1 align="center">C-Programs Run</h1>
 // 1. start with basic codes program (hello program)<br>
 #include <stdio.h><br>
  <br>
