@@ -2,9 +2,8 @@
   <img src="https://readme-typing-svg.demolab.com?font=Chewy&size=50&duration=20&color=696969&pause=20&center=true&vCenter=true&width=900&lines=Welcome+to+Learn+and+Write+Coding+with+Me+!" />
 </p>
 <hr>
-<p>
-  Hello This is Kartik's Repo For Computer Science Student Who want to learn how to write a code
-</p>
+<h2 align="center">
+  Hello it's Kartik's repo. for Computer Science student who want to learn how to write a code
+</h2>
 
-This is for your practice. And it makes you an excellent programmer. This accelerates your coding speed.<br>
-And the outputs are provided alongside, so you know whether you are on the right track or not.
+<p align="center">This is for your practice. And it makes you an excellent programmer. This accelerates your coding speed.<br>And the outputs are provided alongside, so you know whether you are on the right track or not.</p>
