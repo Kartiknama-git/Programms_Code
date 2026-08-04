@@ -10,4 +10,11 @@
 <hr>
 
 ## C-Programs Run
-1. hello program = <a href="https://www.programiz.com/online-compiler/36Vi2NyyMohQh">Run Code</a>
+// 1. start with basic codes program (hello program)<br>
+#include <stdio.h><br>
+ <br>
+int main() {<br>
+    printf("Hello, World!\n");<br>
+    return 0;<br>
+}<br>
+Click here for <a href="https://www.programiz.com/online-compiler/36Vi2NyyMohQh">Run Code</a>
