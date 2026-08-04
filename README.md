@@ -7,3 +7,7 @@
 </h2>
 
 <p align="center">This is for your practice. And it makes you an excellent programmer. This accelerates your coding speed.<br>And the outputs are provided alongside, so you know whether you are on the right track or not.</p>
+<hr>
+
+## C-Programs Run
+1. hello program = <a href="https://www.programiz.com/online-compiler/36Vi2NyyMohQh">Run Code</a>
