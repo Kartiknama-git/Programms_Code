@@ -1,7 +1,17 @@
-// start with basic codes program
+How It Works
+
 #include <stdio.h>
- 
-int main() {
-    printf("Hello, World!\n");
-    return 0;
-}
+Includes the standard input-output library.
+This contains the printf function.
+
+int main()
+The starting point of the program.
+Every C program must have one.
+
+printf("Hello, World!\n");
+Prints the text to the screen.
+\n moves the cursor to a new line.
+The semicolon ; ends the statement.
+
+return 0;
+Signals successful execution to the system.
