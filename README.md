@@ -32,5 +32,5 @@ int main() {   <br>
     printf("%d + %d = %d", num1, num2, sum);<br>
     return 0;<br>
 }<br>
-Click here for <a href="https://www.programiz.com/c-programming/online-compiler/?ref=cd43374d">Run Code</a>
+Click here for <a href="https://www.programiz.com/online-compiler/11ZS8xbWCRP61">Run Code</a>
 <hr>
