@@ -18,7 +18,7 @@ int main() {<br>
     return 0;<br>
 }<br>
 Click here for <a href="https://www.programiz.com/online-compiler/36Vi2NyyMohQh">Run Code</a>
-<br><br><br><br>
+<hr>
 
 // 2. Sum 2 integer number program<br>
 #include <stdio.h><br>
