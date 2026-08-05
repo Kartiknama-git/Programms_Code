@@ -10,7 +10,9 @@
 <hr>
 
 <h1 align="center">C-Programs Run</h1>
-// 1. start with basic codes program (hello program)<br>
+<h3>
+1. start with basic codes program (hello program) <br>
+</h3>
 #include <stdio.h><br>
  <br>
 int main() {<br>
@@ -26,7 +28,6 @@ int main() {<br>
     int num1 = 2, num2 = 4;<br>
     int sum;<br>
 <br>
-    calculate the sum<br>
     sum = num1 + num2;<br>   
 <br>
     printf("%d + %d = %d", num1, num2, sum);<br>
