@@ -18,3 +18,17 @@ int main() {<br>
     return 0;<br>
 }<br>
 Click here for <a href="https://www.programiz.com/online-compiler/36Vi2NyyMohQh">Run Code</a>
+
+
+// 2. Sum 2 integer number program<br>
+#include <stdio.h><br>
+int main() {<br>
+    int num1 = 2, num2 = 4;<br>
+    int sum;<br>
+<br>
+    calculate the sum<br>
+    sum = num1 + num2;<br>   
+<br>
+    printf("%d + %d = %d", num1, num2, sum);<br>
+    return 0;<br>
+}
