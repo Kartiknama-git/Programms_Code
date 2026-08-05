@@ -11,7 +11,7 @@
 
 <h1 align="center">C-Programs Run</h1>
 1. start with basic codes program (hello program) <br>
-#include <stdio.h> <br>
+#include <stdio.h><br>
 <br>
 int main() {<br>
     printf("Hello, World!\n");<br>
@@ -22,11 +22,12 @@ Click here for <a href="https://www.programiz.com/online-compiler/36Vi2NyyMohQh"
 
 // 2. Sum 2 integer number program<br>
 #include <stdio.h><br>
-int main() {<br>
+int main() {   <br>
+<br>
     int num1 = 2, num2 = 4;<br>
     int sum;<br>
 <br>
-    sum = num1 + num2;<br>   
+    sum = num1 + num2;      <br>
 <br>
     printf("%d + %d = %d", num1, num2, sum);<br>
     return 0;<br>
