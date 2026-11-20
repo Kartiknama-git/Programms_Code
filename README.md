@@ -14,7 +14,7 @@
 #include <stdio.h> <br>
 <br>
 int main() {<br>
-    printf("Hello, World!\n");<br>
+    printf("Hello friends i am kartik \n");<br>
     return 0;<br>
 }<br>
 Click here for <a href="https://www.programiz.com/online-compiler/36Vi2NyyMohQh">Run Code</a>
