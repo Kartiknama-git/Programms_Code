@@ -19,6 +19,8 @@ int main() {
 }
 
 
+<a href="https://www.onlinegdb.com/online_c++_compiler#"> run code </a>
+
 
 2. Write a program to perform addition, subtraction, multiplication, and division on two integers.
 
