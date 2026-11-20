@@ -1,1 +1,543 @@
+// All C++ Programs here
 
+1. Write a program to calculate the distance between two points.
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    float x1, y1, x2, y2, distance;
+    cout << "Enter first point (x1, y1): ";
+    cin >> x1 >> y1;
+    cout << "Enter second point (x2, y2): ";
+    cin >> x2 >> y2;
+    distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+    cout << "Distance between two points = " << distance;
+
+    return 0;
+}
+
+
+
+2. Write a program to perform addition, subtraction, multiplication, and division on two integers.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num1, num2;
+    cout << "Enter two integers: ";
+    cin >> num1 >> num2;
+    cout << "\nAddition = " << num1 + num2;
+    cout << "\nSubtraction = " << num1 - num2;
+    cout << "\nMultiplication = " << num1 * num2;
+    if (num2 != 0) {
+        cout << "\nDivision = " << (float)num1 / num2;
+    }
+    else {
+        cout << "\nDivision is not possible (divide by zero).";
+    }
+
+    return 0;
+}
+
+
+
+3. Write a program to swap two numbers using a temporary variable.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, temp;
+
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
+
+    cout << "\nBefore swapping:";
+    cout << "\na = " << a;
+    cout << "\nb = " << b;
+
+    // Swapping using temporary variable
+    temp = a;
+    a = b;
+    b = temp;
+
+    cout << "\n\nAfter swapping:";
+    cout << "\na = " << a;
+    cout << "\nb = " << b;
+
+    return 0;
+}
+
+
+
+4. Write a program to display the size of every fundamental data type in C++.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Size of Fundamental Data Types in C++\n\n";
+
+    cout << "Size of char          = " << sizeof(char) << " bytes" << endl;
+    cout << "Size of int           = " << sizeof(int) << " bytes" << endl;
+    cout << "Size of float         = " << sizeof(float) << " bytes" << endl;
+    cout << "Size of double        = " << sizeof(double) << " bytes" << endl;
+    cout << "Size of bool          = " << sizeof(bool) << " bytes" << endl;
+    cout << "Size of wchar_t       = " << sizeof(wchar_t) << " bytes" << endl;
+    cout << "Size of short         = " << sizeof(short) << " bytes" << endl;
+    cout << "Size of long          = " << sizeof(long) << " bytes" << endl;
+    cout << "Size of long long     = " << sizeof(long long) << " bytes" << endl;
+    cout << "Size of long double   = " << sizeof(long double) << " bytes" << endl;
+    cout << "Size of void*         = " << sizeof(void*) << " bytes" << endl;
+
+    return 0;
+}
+
+
+
+5. Write a program to convert an integer into its corresponding floating-point number.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    float fnum;
+
+    cout << "Enter an integer: ";
+    cin >> num;
+
+    // Type conversion from int to float
+    fnum = (float)num;
+
+    cout << "Integer value = " << num << endl;
+    cout << "Floating-point value = " << fnum << endl;
+
+    return 0;
+}
+
+
+
+6. Write a program to convert a lowercase character into uppercase.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    char ch;
+
+    cout << "Enter a lowercase character: ";
+    cin >> ch;
+
+    // Convert lowercase to uppercase
+    ch = ch - 32;
+
+    cout << "Uppercase character = " << ch << endl;
+
+    return 0;
+}
+
+
+
+7.  Write a program to determine whether a given year is a leap year.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int year;
+
+    cout << "Enter a year: ";
+    cin >> year;
+
+    if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) {
+        cout << year << " is a Leap Year.";
+    }
+    else {
+        cout << year << " is not a Leap Year.";
+    }
+
+    return 0;
+}
+
+
+
+8. Write a program to print 20 horizontal asterisks (*).
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    for (int i = 1; i <= 20; i++) {
+        cout << "*";
+    }
+
+    return 0;
+}
+
+
+
+9. Write a program to classify a given number as prime or composite.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num, i, count = 0;
+
+    cout << "Enter a number: ";
+    cin >> num;
+
+    if (num <= 1) {
+        cout << num << " is neither Prime nor Composite.";
+    }
+    else {
+        for (i = 1; i <= num; i++) {
+            if (num % i == 0) {
+                count++;
+            }
+        }
+
+        if (count == 2) {
+            cout << num << " is a Prime Number.";
+        }
+        else {
+            cout << num << " is a Composite Number.";
+        }
+    }
+
+    return 0;
+}
+
+
+
+10. Write a program to calculate the sum of the series <span class="katex-error" title="ParseError: KaTeX parse error: Unexpected character: '&#x27; at position 27: …+ 33/3 + \cdots\̲" style="color:#cc0000">1/1 + 22/2 + 33/3 + \cdots</span>.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    float sum = 0;
+
+    cout << "Enter the number of terms: ";
+    cin >> n;
+
+    for (int i = 1; i <= n; i++) {
+        int numerator = i * 11;
+        sum = sum + (float)numerator / i;
+    }
+
+    cout << "Sum of the series = " << sum;
+
+    return 0;
+}
+
+
+
+11. Write a program to print the following alphabet pattern:
+A
+AB
+ABC
+ABCD
+ABCDE
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    for (int i = 1; i <= 5; i++) {
+        for (int j = 1; j <= i; j++) {
+            cout << char('A' + j - 1);
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+
+
+
+12. Write a program to print the following number pattern:
+1
+121
+12321
+1234321
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    for (int i = 1; i <= 4; i++) {
+
+        // Print increasing numbers
+        for (int j = 1; j <= i; j++) {
+            cout << j;
+        }
+
+        // Print decreasing numbers
+        for (int j = i - 1; j >= 1; j--) {
+            cout << j;
+        }
+
+        cout << endl;
+    }
+
+    return 0;
+}
+
+
+
+13. Write a program using a for loop to calculate the average of the first <span class="katex-error" title="ParseError: KaTeX parse error: Unexpected character: '&#x27; at position 2: n\̲" style="color:#cc0000">n</span> natural numbers.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, sum = 0;
+    float average;
+
+    cout << "Enter the value of n: ";
+    cin >> n;
+
+    for (int i = 1; i <= n; i++) {
+        sum = sum + i;
+    }
+
+    average = (float)sum / n;
+
+    cout << "Sum = " << sum << endl;
+    cout << "Average = " << average << endl;
+
+    return 0;
+}
+
+
+
+14. Write a program to convert a decimal integer into its binary equivalent.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num, binary[32], i = 0;
+
+    cout << "Enter a decimal number: ";
+    cin >> num;
+
+    if (num == 0) {
+        cout << "Binary equivalent = 0";
+    }
+    else if (num < 0) {
+        cout << "Please enter a non-negative integer.";
+    }
+    else {
+        while (num > 0) {
+            binary[i] = num % 2;
+            num = num / 2;
+            i++;
+        }
+
+        cout << "Binary equivalent = ";
+
+        for (int j = i - 1; j >= 0; j--) {
+            cout << binary[j];
+        }
+    }
+
+    return 0;
+}
+
+
+
+15. Write a program to find the largest of 10 numbers using the ternary operator.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num, largest;
+
+    cout << "Enter 10 numbers:" << endl;
+
+    cin >> largest;
+
+    for (int i = 2; i <= 10; i++) {
+        cin >> num;
+
+        largest = (num > largest) ? num : largest;
+    }
+
+    cout << "Largest number = " << largest << endl;
+
+    return 0;
+}
+
+
+
+16. Write a program to generate the calendar of a month given its starting day and the number of days in that month.
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    int startDay, days;
+
+    cout << "Enter starting day (0=Sunday, 1=Monday, ..., 6=Saturday): ";
+    cin >> startDay;
+
+    cout << "Enter number of days in the month: ";
+    cin >> days;
+
+    if (startDay < 0 || startDay > 6 || days < 1 || days > 31) {
+        cout << "Invalid input!";
+        return 0;
+    }
+
+    cout << "\nSun Mon Tue Wed Thu Fri Sat\n";
+
+    // Print spaces before the first date
+    for (int i = 0; i < startDay; i++) {
+        cout << "    ";
+    }
+
+    // Print dates of the month
+    for (int date = 1; date <= days; date++) {
+        cout << setw(3) << date << " ";
+
+        if ((startDay + date) % 7 == 0) {
+            cout << endl;
+        }
+    }
+
+    cout << endl;
+
+    return 0;
+}
+
+
+
+17. Write a program to calculate the area of a circle using a function.
+
+#include <iostream>
+using namespace std;
+
+// Function to calculate area of circle
+float calculateArea(float radius) {
+    return 3.14 * radius * radius;
+}
+
+int main() {
+    float radius, area;
+
+    cout << "Enter the radius of circle: ";
+    cin >> radius;
+
+    area = calculateArea(radius);
+
+    cout << "Area of circle = " << area << endl;
+
+    return 0;
+}
+
+
+
+18. Write a program to calculate the volume of a cuboid using default arguments.
+#include <iostream>
+using namespace std;
+
+// Function with default arguments
+float calculateVolume(float length, float breadth = 2, float height = 3) {
+    return length * breadth * height;
+}
+
+int main() {
+    float length, breadth, height;
+
+    cout << "Enter length of cuboid: ";
+    cin >> length;
+
+    cout << "\nVolume using default arguments = "
+         << calculateVolume(length);
+
+    cout << "\nVolume using all arguments = "
+         << calculateVolume(length, 4, 5);
+
+    return 0;
+}
+
+
+
+19. Write a program to add two values of different data types using static polymorphism.
+#include <iostream>
+using namespace std;
+
+class Addition {
+public:
+    // Function to add two integers
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    // Function to add two floating-point values
+    float add(float a, float b) {
+        return a + b;
+    }
+
+    // Function to add an integer and a float
+    float add(int a, float b) {
+        return a + b;
+    }
+};
+
+int main() {
+    Addition obj;
+
+    cout << "Addition of two integers: "
+         << obj.add(10, 20) << endl;
+
+    cout << "Addition of two float values: "
+         << obj.add(5.5f, 2.5f) << endl;
+
+    cout << "Addition of integer and float: "
+         << obj.add(10, 5.5f) << endl;
+
+    return 0;
+}
+
+
+
+20. Write a program to calculate the GCD of two numbers using a recursive function.
+#include <iostream>
+using namespace std;
+
+// Recursive function to calculate GCD
+int findGCD(int a, int b) {
+    if (b == 0) {
+        return a;
+    }
+
+    return findGCD(b, a % b);
+}
+
+int main() {
+    int num1, num2;
+
+    cout << "Enter two numbers: ";
+    cin >> num1 >> num2;
+
+    int gcd = findGCD(num1, num2);
+
+    cout << "GCD of " << num1 << " and "
+         << num2 << " = " << gcd << endl;
+
+    return 0;
+}
