@@ -10,4 +10,4 @@
 <hr>
 <h1 align="center">All the Programs Run</h1>
 <hr>
-<center><a href="https://www.programiz.com/online-compiler/">Click here for Run</a></center>
+<h1 align="center"><a href="https://www.programiz.com/online-compiler/">Click here for Run</a></h1>
