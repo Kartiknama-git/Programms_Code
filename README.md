@@ -8,25 +8,6 @@
 
 <p align="center">This is for your practice. And it makes you an excellent programmer. This accelerates your coding speed.<br>And the outputs are provided alongside, so you know whether you are on the right track or not.</p>
 <hr>
-
-<h1 align="center">C-Programs Run</h1>
-1. start with basic codes program (hello program) <br>
-#include "stdio.h" <br>
-int main() {<br>
-    printf("Hello friends i am kartik \n");<br>
-    return 0;<br>
-}<br>
-Click here for <a href="https://www.programiz.com/online-compiler/36Vi2NyyMohQh">Run Code</a>
+<h1 align="center">All the Programs Run</h1>
 <hr>
-
-// 2. Sum 2 integer number program<br>
-#include "stdio.h" <br>
-int main() {   <br>
-    int num1 = 2, num2 = 4;<br>
-    int sum;<br>
-    sum = num1 + num2;      <br>
-    printf("%d + %d = %d", num1, num2, sum);<br>
-    return 0;<br>
-}<br>
-Click here for <a href="https://www.programiz.com/online-compiler/11ZS8xbWCRP61">Run Code</a>
-<hr>
+<a href="https://www.programiz.com/online-compiler/">Click here for Run</a>
